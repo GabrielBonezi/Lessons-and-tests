@@ -1,8 +1,10 @@
+The following is my annotations from the course "introduction to javascript" from Codecademy.
+
 function console.log(xxx)
 
 The function allows the user to display an information. If I want the code to say "hello", I simply write
 
-console.log(hello);
+console.log('hello');
 
 Then the response will be
 
@@ -12,8 +14,39 @@ Sometimes it's important to leave some notes, not only for yourself in the futur
 To do that, you can simply use "//" or "/*" and "*/". For example:
 
 // Bellow the code says the name of the owner
-console.log (Gabriel)
+console.log ('Gabriel');
 /* Above the code says the name of the owner */
+
+The format /* and */ can also be used to comment multiples lines, like so:
+
+/* Bellow the code says the name of the owner
+console.log ('Gabriel');
+console.log ('Bonezi');
+*/
+It's important to note that comments are an efficient way to  block some part of the code from running. As done above, the code would simply not say anything, because all of it is in comment format.
 
 --
 
+Now we are going to differenciate the types of data.
+
+-Numbers: Any number, 0, 1, 2, 500... including decimals, 0.15, 100.99...
+-Strings: Grouping of character (letters, symbols, numbers, spaces, whatever character, including numbers) but here they are surrounded by quotes, single ', or double ".
+Example of string: "Gabriel is the name of the original owner of this code"
+-Boolean: a simple switch, the value is "true" or "false", on and off or the answer to a "yes" or "no" question.
+-Null: determined by the word "null", it's the intentional absence of a determined value.
+-Undefined: determined by the word "undefined", it's the same as null, but it means a given value that doesn't exist.
+-Symbol: a new feature to the language. A unique indentifier.
+-Object: collection of related data.
+
+Input:
+console.log('JavaScript');
+console.log(2011);
+console.log('Woohoo! I love to code! #codecademy');
+console.log(20.49);
+
+Output:
+JavaScript
+2011
+Woohoo! I love to code! #codecademy
+20.49
+--
