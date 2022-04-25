@@ -1,0 +1,19 @@
+function console.log(xxx)
+
+The function allows the user to display an information. If I want the code to say "hello", I simply write
+
+console.log(hello);
+
+Then the response will be
+
+hello
+--
+Sometimes it's important to leave some notes, not only for yourself in the future, but for other programmers to understand better the roles of that specific line or function.
+To do that, you can simply use "//" or "/*" and "*/". For example:
+
+// Bellow the code says the name of the owner
+console.log (Gabriel)
+/* Above the code says the name of the owner */
+
+--
+
