@@ -1,5 +1,9 @@
-The following is my annotations from the course "introduction to javascript" from Codecademy.
+The following is my annotations from the course "introduction to javascript" from Codecademy. Visiting their site and checking the course is advised.
+It's free... for now :)
 
+--
+Lesson 1
+--
 function console.log(xxx)
 
 The function allows the user to display an information. If I want the code to say "hello", I simply write
@@ -50,3 +54,100 @@ JavaScript
 Woohoo! I love to code! #codecademy
 20.49
 --
+
+Operator is a character that does something, performs a task in the code. Javascript has some arithmethic operators that allows the user to perform calculations with numbers.
+
+using the following, you can:
+
++ add;
+- subtract;
+* multiply;
+/ divide;
+% get the remainder of the division between both numbers.
+
+input:
+console.log(5+3);
+console.log(5-3);
+console.log(5*3);
+console.log(5/3);
+console.log(5%3);
+
+output:
+8
+2
+15
+1.6666666666666667
+2
+
+note that the symbol % represents the remainder of the division between 5 and 3, where 3 can go 1 time on 5 and it remains 2, witch is the output of the code.
+inputting console.log(5%5); the output will be 0, because there's no remainder.
+--
+
+Although operator can be used with numbers and arithmethics calculations, they can also be used with strings.
+Adding two strings togheter can be also called concatenation.
+
+Note that the computer will write exacly the strings, so, if you want a space between the strings, or a comma, or anything like that, you need to be precise in the string to get the result you want.
+
+console.log('Hello'+ 'World'); //Prints HelloWorld
+console.log('Hello '+'World'); //Prints Hello World
+console.log('Hello'+' '+'World');// Hello World
+--
+
+Every piece of data in the code has specific properties. As an exemple, each string in the code has the property length, wich reveals how many characters are in that specific string.
+You can have that information by appending the string with a period and the property name.
+
+console.log('Hello'.length); // Prints 5
+
+It is important to write the name of the property correctly, for example, if you write lenght, instead of length it will not work.
+
+console.log('Hello'.length); //Prints 5
+console.log('Teaching the world how to code'.length); //Prints 30
+--
+Methods are actions that we can demand the code to do for us.
+
+If we need to put a string in the UPPER CASE, for example, the method .toUpperCase() can be used.
+
+Note that the . pulls the action of the method to the object right before it.
+In the very example of console.log, you are logging something in the console, being log the action, . the middleman, and console the object that will suffer the action.
+
+The methods can also be used to check if the action is true or false, revealing a boolean, for example:
+
+console.log('Hello'.startsWith('H')); //Prints true
+
+There's a number of methods that can be used, they can be found in the JavaScript String Documentation.
+
+One of them is the method .trim(), that can be used to remove the white spaces on the strings, as shown bellow
+
+console.log('    Removing the white spaces    '.trim()); // prints Removing the white spaces
+
+please note that this method will remove the white spaces before and after the string. If you leave the spaces in between the words, they will be printed:
+
+console.log('    Removing the     white spaces   '.trim()); // prints Removing the     white spaces
+--
+
+Besides the console, JavaScript has other objects built into it.
+
+An exemple is the Math object, wich can be used to do more complex mathematical operations than the arithmetic ones.
+
+From the built-in object Math, we can use the method .random(). This method returs a random number between 0 (inclusive) and 1 (exclusive). With this method you can escale to any range
+Just multiply by the number you want.
+
+console.log(Math.random()); // Prints a random number between 0 and 1 (but not 1) ex. 0.42044008985036974
+console.log(Math.random()*50); // Prints a random number between 0 and 50 (but not 50) ex. 32.624706578864725
+
+Where the results will probably be a decimal number, there's another method that can ensure that the result will be a whole number.
+Math.floor() takes the decimal numbers and rounds it down to the nearest whole number.
+
+console.log(Math.floor(Math.random()*50)); //prints a whole number between 0 and 50, ex. 49
+
+console.log(Math.random()); //Prints random number between 0 and 1.
+console.log(Math.random()*50); // random number 0-50
+console.log(Math.floor(Math.random()*50)); // random integer number 0-50
+console.log(Math.floor(Math.random()*100)); //integer number 0-100, ex. 52
+console.log(Math.ceil(43.8)); //prints smallest integer greater than or equal to a decimal number, in this case, 44
+console.log(Number.isInteger(2017)); // prints true
+
+--
+End of Lesson 1
+--
+
