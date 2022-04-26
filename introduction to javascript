@@ -151,3 +151,84 @@ console.log(Number.isInteger(2017)); // prints true
 End of Lesson 1
 --
 
+--
+Lesson 2
+--
+
+Declaring variables
+
+In the version ES6 of JavaScript, in 2015, two keywords were introduced in the language: let and const
+
+Those are used to create and declare variables. Prior to that version, programmers would use the keyword var to declare them.
+
+var myName = 'Gabriel';
+console.log(myName); //prints Gabriel
+
+It's important to note the variable name. The capitalization in the variables are done in camel casing. Camel casing consists in writing the first word in lowercase and the following words with the initial letter in uppercase, as shown:
+
+var camelCasingEverythingForever = 'true'
+
+Also, it's important to note that variable names are case sensitive. That means that if there are two variables with the same name, but different words in uppercase or lowercase, they are different variables.
+
+var myNameIsGabriel = 'Gabriel'
+var mynameIsGabriel = 'not Gabriel'
+console.log (myNameIsGabriel); // Output: Gabriel
+console.log (mynameIsGabriel); // Output: GABRIEL
+
+That said, it's a bad practice having two variables with the same name but different casings.
+
+console.log("declaring variables"); //Prints declaring variables
+var favoriteFood = "pizza"; // declares that the variable favoriteFood is equal to 'pizza'
+var numOfSlices = 8; // declares that the variable numOfSlices is equal to 8
+console.log(favoriteFood); // prints pizza
+console.log("A pizza has " + numOfSlices + " slices"); // prints A pizza has 8 slices
+
+--
+
+variable let
+
+This variable can have its value reassigned in the middle of the code, as follows:
+
+let bottleColor = 'blue'
+console.log(bottleColor); // returns blue
+let bottleColor = 'green';
+console.log(bottleColor); // returns green
+
+On the other way, the variable can simply not have a value assigned (including var as well). Then the value returned will be 'undefined' as shown:
+
+let price;
+console.log (price); //output: undefined
+price = 250
+console.log(price); //output: 250
+
+let changeMe = true;
+console.log(changeMe); //prints true
+changeMe = false;
+console.log(changeMe); // prints false
+
+--
+variable const
+
+It's the short fot constant. Used to store any value.
+Follows the same structure as var and let.
+
+const myName = 'Gabriel'
+console.log (myName); // Prints Gabriel
+
+const cannot be reassigned because its a constant. Trying to reassign it will return a TypeError
+
+const myName = 'Gabriel';
+console.log(myName);
+myName = 'Bonezi';
+console.log(myName);
+
+That returns an error.
+
+const myName = 'Gabriel';
+console.log(myName);
+/* myName = 'Bonezi';
+console.log(myName);*/
+
+That returns Gabriel, because the reassigning was commented off.
+
+
