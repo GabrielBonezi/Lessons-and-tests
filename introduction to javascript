@@ -231,4 +231,9 @@ console.log(myName);*/
 
 That returns Gabriel, because the reassigning was commented off.
 
+The const variable needs to be assigned as soon as it's created, otherwise a SyntaxError will occur.
+
+const myName;
+myName = 'Gabriel' //doesn't work, because it needs to be assigned above.
+
 
