@@ -1,0 +1,23 @@
+let kelvin = 293; // the value of today's forecast
+kelvin = 0 // changing this value will affect the temperature in Celsius or Fahrenheit
+let celsius = kelvin - 273; // celsius is determined by the temperature in kelvin minus 273°
+let fahrenheit = celsius * (9/5) + 32; // fahrenheit is celsius times 1.8 plus 32°
+fahrenheit = Math.floor(celsius * (9/5)+32)
+
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`); // output : The temperature is 32 degrees in Fahrenheit.
+
+
+---
+
+
+let kelvin = 293; // the value of today's forecast
+kelvin = 273;
+kelvin = 300;
+let celsius = kelvin - 273; // celsius is determined by the temperature in kelvin minus 273°
+let fahrenheit = celsius * (9/5) + 32; // fahrenheit is celsius times 1.8 plus 32°
+fahrenheit = Math.floor(celsius * (9/5)+32)
+let newton = Math.floor(celsius * (33/100));
+
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit, in Celsius, the temperature is ${celsius} degrees, in Kelvin, the temperature is ${kelvin} degrees, and in Newton, the temperature is ${newton} degrees.`);
+
+/* output: The temperature is 80 degrees Fahrenheit, in Celsius, the temperature is 27 degrees, in Kelvin, the temperature is 300 degrees, and in Newton, the temperature is 8 degrees. */
