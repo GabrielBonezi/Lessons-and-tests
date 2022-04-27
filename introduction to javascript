@@ -236,4 +236,138 @@ The const variable needs to be assigned as soon as it's created, otherwise a Syn
 const myName;
 myName = 'Gabriel' //doesn't work, because it needs to be assigned above.
 
+--
+
+Mathematical Assignment Operators
+
+let w = 3;
+w = w + 1;
+console.log(w); // output: 4
+
+There's a change of value of the variable w, changing it from 3 to 4.
+
+Another way of doing the same thing is by writing
+
+let w = 3;
+w += 1;
+console.log (w); // output: 4
+
+using the += assignment operator, we can reassign the value of w, performing a mathematical operation of the first operator + using the number in the right, then reassigning the variable w to the computed value.
+
+the same can be done with the other mathematical operators: -=; *=; /=.
+
+lex x = 20;
+x -= 5; // can be written x = x -5
+console.log (x); // output: 15
+
+let y = 50;
+y *= 2; // can be written as y = y * 2
+console.log (y); // output: 100
+
+let z = 8;
+z /= 2; // cam be written as z = z / 2
+console.log (z); // output: 4
+
+---------------------
+let levelUp = 10;
+let powerLevel = 9001;
+let multiplyMe = 32;
+let quarterMe = 1152;
+
+// Use the mathematical assignments in the space below:
+levelUp += 5;
+powerLevel -= 100;
+multiplyMe *= 11;
+quarterMe /= 4;
+
+console.log('The value of levelUp:', levelUp); 
+console.log('The value of powerLevel:', powerLevel); 
+console.log('The value of multiplyMe:', multiplyMe); 
+console.log('The value of quarterMe:', quarterMe);
+
+
+Output: 
+The value of levelUp: 15
+The value of powerLevel: 8901
+The value of multiplyMe: 352
+The value of quarterMe: 288
+---------------------------------------
+
+Increment and Decrement operators
+
+increment: ++
+decrement: --
+
+they will increase or decrease the value of the variable by 1.
+
+let a = 10;
+a++;
+console.log(a); // output: 11
+
+let b = 20;
+b--;
+console.log(b); // output: 19
+
+once incremented or decremented, the variable has its value reassigned, just as in the other mathematical operators.
+
+let gainedDollar = 3;
+let lostDollar = 50;
+gainedDollar++;
+lostDollar--;
+console.log(gainedDollar); // output: 4
+console.log(lostDollar); // output: 49
+
+--
+
+String concatenation with variables
+
+the + operator can be used to combine two string values 
+
+let myPet = 'armadillo';
+console.log('I own a pet ' + myPet + '.') // output: I own a pet armadillo.
+
+--
+
+String Interpolation
+
+in the ES6 version of JavaScript, we can interpolate variables into strings using template literals, as shown:
+
+const myPet = 'armadillo';
+console.log(`I own a pet ${myPet}.`); // output: I own a pet armadillo.
+
+One of the biggest benefits to using template literals is the readability of the code. That way you can more easily tell what the new string will be.
+Also you dont need to worry about escaping double or single quotes.
+
+let myName = 'Gabriel Bonezi';
+let myCity = 'Stockholm';
+console.log(myName);
+console.log(myCity);
+
+console.log(`My name is ${myName}. My favorite city is ${myCity}. `); // output My name is Gabriel Bonezi. My favorite city is Stockholm
+
+--
+
+typeof Operator
+
+used to check the data type of a variable's value
+
+const unknown1 = 'foo';
+console.log(typeof unknown1); // output: string
+
+const unknown2 = 10;
+console.log(typeof unknown2); // output: number
+
+const unknown3 = true;
+console.log(typeof unknown3); // output: boolean
+
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable); // output: string
+newVariable = 1;
+console.log(typeof newVariable); // output: number
+
+--
+End of lesson 2
+--
+
+
 
