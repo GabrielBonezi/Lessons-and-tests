@@ -18,8 +18,29 @@ console.log(myAgeInDogYears);
 const myName = 'Gabriel'
 
 console.log(`My name is ${myName}. I am ${myAge} years old in human years wich is ${myAgeInDogYears} years old in dog years.`);
+/*-------------------------------------------------------------------------
+final version:
+----------------*/
 
-// output:
+
+let myAge = 27;
+let earlyYears = 2;
+let laterYears = myAge - 2;
+laterYears *= 4;
+earlyYears *= 10.5;
+let myName = 'Gabriel'
+
+if (myAge >= 2) {
+  myAgeInDogYears = laterYears + earlyYears;
+  } else {
+  myAgeInDogYears = myAge * 10.5;
+  }
+console.log(`My name is ${myName}. I am ${myAge} years old in human years wich is ${myAgeInDogYears} years old in dog years.`);
+
+
+/*------------------
+all bellow are comments and improvments
+output:
 100
 21
 121
@@ -66,5 +87,36 @@ being 1.5 years old, the result will be:
 
 My name is Gabriel. I am 1.5 years old in human years wich is 15.75 years old in dog years.
 
+being 3 years old:
 
+My name is Gabriel. I am 3 years old in human years wich is 25 years old in dog years.
+
+But there's a way to improve that code. Instead of changing the log, we can change the variable itself, as follows:
+
+--
+if (myAge >= 2) {
+  myAgeInDogYears = laterYears + earlyYears;
+  } else {
+  myAgeInDogYears = myAge * 10.5;
+  }
+console.log(`My name is ${myName}. I am ${myAge} years old in human years wich is ${myAgeInDogYears} years old in dog years.`);
+------------------------------------------------------------------------------
+final version:
+----------------
+let myAge = 27;
+let earlyYears = 2;
+let laterYears = myAge - 2;
+laterYears *= 4;
+earlyYears *= 10.5;
+const myName = 'Gabriel'
+
+if (myAge >= 2) {
+  myAgeInDogYears = laterYears + earlyYears;
+  } else {
+  myAgeInDogYears = myAge * 10.5;
+  }
+console.log(`My name is ${myName}. I am ${myAge} years old in human years wich is ${myAgeInDogYears} years old in dog years.`);
+--------------------
+--
+*/
 
