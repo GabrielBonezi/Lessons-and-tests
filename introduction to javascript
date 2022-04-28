@@ -368,6 +368,81 @@ console.log(typeof newVariable); // output: number
 --
 End of lesson 2
 --
+Lesson 3
+--
 
+Conditional Statements
+
+Used to check specific conditions and perform tasks based on that info.
+--
+If statement
+
+if (true) {
+console.log('This message will print!');
+}
+// output : This message will print!
+
+The example is composed of:
+1. the if keyword followed by a set of parentheses (), followed by a code block or block statement, indicated by a set of curly braces {};
+2. inside the parentheses a condition is provided that evalues to a boolean, true or false;
+3. if the condition evalues to true, the code inside the curly braces executes;
+4. if the condition evalues to false, the block will not execute.
+
+--
+Else statement
+
+In the event that the boolean in the if condition evalues to false, we can assign a default behavior to the condition by using the statement else to run another block of code.
+
+if (false) {
+console.log('The code in this block will not run.');
+} else {
+console.log('But the code in this block will"');
+}
+// output: But the code in this block will!
+
+An else statement must be paired with an if statement, together they are referred to as an if...else statement.
+if...else statements allow us to automate solutions to yes or no questions, aka binary decisions.
+
+
+let sale = true;
+sale = false;
+
+if(sale) {
+  console.log('Time to buy!');
+} else {
+  console.log('Time to wait for a sale.');
+}
+//prints Time to wait for a sale.
+
+--
+Comparison Operators
+
+When writing conditional statements, often different types of operators are needed in order to compare the value of the variables.
+
+the comparison operators are:
+
+1. < less than;
+2. > greater than;
+3. <= less than or equal to;
+4. >= greater than or equal to;
+5. === is equal to; (considers data type)
+6. == is equal to; (does not consider data type)
+7. != is not equal to; (doesnt consider data type)
+8. !=== is not equal to (considers data type)
+
+those operators compare the value on the left with the one on the right:
+
+10 < 12 // evaluates to true
+console.log (3>5) //prints false
+
+they can also be used to compare different data types like strings:
+
+'apples' === 'bananas' //false
+'apples' !== 'bananas' //true
+1 == 1 // true
+'1' == 1 //true, a string and a number, but they have the same value
+'1' === 1 //false, a string and a number
+'1' !== 1 // true
+'1' != 1 //false, they have the same value, so they are 'equal' when there's only one '='
 
 
