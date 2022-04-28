@@ -1,0 +1,70 @@
+/* The proposition is: 8 years in a human's life equates to 45 years in a dog's life.
+The first two years of a dog’s life count as 10.5 dog years each.
+Each year following equates to 4 dog years.
+*/
+
+let myAge = 27; // My actual age
+let earlyYears = 2;
+let laterYears = myAge - 2; // the first two years are already accounted in the earlyYears variable
+let dogLaterYears = laterYears * 4
+let dogEarlyYears = earlyYears * 10.5;
+
+console.log(dogLaterYears);
+console.log(dogEarlyYears);
+
+myAgeInDogYears = dogLaterYears + dogEarlyYears;
+console.log(myAgeInDogYears);
+
+const myName = 'Gabriel'
+
+console.log(`My name is ${myName}. I am ${myAge} years old in human years wich is ${myAgeInDogYears} years old in dog years.`);
+
+// output:
+100
+21
+121
+My name is gabriel. I am 27 years old in human years wich is 121 years old in dog years.
+
+--
+changing myAge to 1 will result in:
+
+-4
+21
+17
+My name is Gabriel. I am 1 years old in human years wich is 17 years old in dog years.
+
+However that solution is wrong, if my age is equal to 1, I'd be 10,5 years old in dog's years.
+
+I'll try and fix that bellow:
+--
+let myAge = 27; // My actual age
+myAge = 1
+let earlyYears = 2;
+let laterYears = myAge - 2; // the first two years are already accounted in the earlyYears variable
+let dogLaterYears = laterYears * 4
+let dogEarlyYears = earlyYears * 10.5;
+const myName = 'Gabriel'
+
+
+console.log(dogLaterYears);
+console.log(dogEarlyYears);
+
+if (myAge == 2) {
+let myAgeInDogYears = dogLaterYears + dogEarlyYears;
+console.log(myAgeInDogYears);
+console.log(`My name is ${myName}. I am ${myAge} years old in human years wich is ${myAgeInDogYears} years old in dog years.`);
+} else {
+  myAgeInDogYears = myAge * 10.5;
+  console.log(`My name is ${myName}. I am ${myAge} years old in human years wich is ${myAgeInDogYears} years old in dog years.`) };
+--
+
+Now, with the age being 1 year old, the output will be:
+
+My name is Gabriel. I am 1 years old in human years wich is 10.5 years old in dog years.
+
+being 1.5 years old, the result will be:
+
+My name is Gabriel. I am 1.5 years old in human years wich is 15.75 years old in dog years.
+
+
+
