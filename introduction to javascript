@@ -445,4 +445,62 @@ they can also be used to compare different data types like strings:
 '1' !== 1 // true
 '1' != 1 //false, they have the same value, so they are 'equal' when there's only one '='
 
+let hungerLevel = 7;
+if (hungerLevel > 7) {console.log ('Time to eat!');
+} else {
+console.log('We can eat later!');
+}
+
+--
+Logical Operators
+--
+
+operators that work with boolean values are known as logical operators:
+
+1. && the and operator;
+2. || the or operator;
+3. ! the not operator;
+
+When we use the && operator, the code checks if two things are true:
+
+if(stopLight === 'green' && pedestrians === 0) {
+console.log ('Go!');
+} else {
+console.log('Stop');
+}
+
+to return the first result, both conditions must evaluate to true!
+Otherwise, if any of the '&& conditions' evaluates to 'false', the '&&' operation will evaluate to 'false' and the block 'else' will run.
+
+If only one condition need to be evalued to 'true', the operation 'or' || can be used succefully.
+
+let day = 'Saturday';
+if (day === 'Saturday' || day === 'Sunday') {
+console.log('Enjoy the weekend!');
+} else {
+console.log('Do some work.');
+}
+
+
+If either day === 'Saturday' or day === 'Sunday' are true, the boolean will return true and execute the first block.
+If the first condition returns true, the second will not even be checked. Only if the first returns false will the second be evaluated. The else block will only run when both evaluates to false.
+
+
+The ! not operator reverses or negates the value of a boolean
+
+let excited = true;
+console.log(!excited); // prints false
+
+let sleepy = false;
+console.log(!sleepy); // prints true
+
+Essentialy the ! operator will either take a true value and pass back false or it will take a false value and pass back true.
+
+The logical operators are often used in conditional statements to add another layer of logic to the code.
+
+
+
+
+
+
 
