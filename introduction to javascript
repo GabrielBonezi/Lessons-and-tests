@@ -498,7 +498,17 @@ Essentialy the ! operator will either take a true value and pass back false or i
 
 The logical operators are often used in conditional statements to add another layer of logic to the code.
 
+let mood = 'sleepy';
+let tirednessLevel = 6;
 
+if (mood === 'sleepy' && tirednessLevel > 8) {
+console.log('time to sleep');
+} else {
+console.log('not bed time yet');
+}
+
+
+--
 
 
 
