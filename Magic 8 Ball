@@ -1,0 +1,61 @@
+//I used 3 different ways to create the magic 8 ball, the one I like most is the switch, therefore is the one not commented out.
+
+userName = '';
+userQuestion = 'what is your luck today?';
+randomNumber = Math.floor(Math.random()*8);
+eightBall = ''
+
+switch (userName) {
+  case '':
+  console.log(`Hello!`);
+  break;
+  case userName:
+  console.log (`Hello ${userName}!`);
+}
+console.log(`Hey ${userName}, ${userQuestion}`)
+console.log (' ')
+/*if (randomNumber == 0) {console.log ('Signs point to yes')}
+if (randomNumber == 1) {console.log ('It is certain')}
+if (randomNumber == 2) {console.log ('It is decidedly so')}
+if (randomNumber == 3) {console.log ('Reply hazy try again')}
+if (randomNumber == 4) {console.log ('Cannot predict now')}
+if (randomNumber == 5) {console.log ('Do not count on it')}
+if (randomNumber == 6) {console.log ('My sources say no')}
+if (randomNumber == 7) {console.log ('Outlook not so good')}
+*/
+switch (randomNumber) {
+  case 0:
+  console.log('It is certain');
+  break;
+  case 1:
+  console.log('It is decidedly so');
+  break; 
+  case 2:
+  console.log('Reply hazy try again');
+  break;
+  case 3:
+  console.log('Cannot predict now');
+  break;
+  case 4:
+  console.log('Do not count on it');
+  break;
+  case 5:
+  console.log('My sources say no');
+  break;
+  case 6:
+  console.log('Outlook not so good');
+  break;
+  case 7:
+  console.log('Signs point to yes');
+  break;
+  default:
+  console.log('Invalid question')
+} /*
+if (randomNumber == 0){console.log('It is certain!');}
+else if (randomNumber == 1){console.log('Looks good!');}
+else if (randomNumber == 2){console.log('Ha, nice, you\'ll eran some money, eventually!');}
+else if (randomNumber == 3){console.log('Well, seems that you need some help...');}
+else if (randomNumber == 4){console.log('The short answer is: No!');}
+else if (randomNumber == 5){console.log('You are not as free as you think you are!');}
+else if (randomNumber == 6){console.log('Hey, look up to the skies!');}
+else if (randomNumber == 7){console.log('You are not very smart, are you?');} */
