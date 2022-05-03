@@ -509,8 +509,77 @@ console.log('not bed time yet');
 
 
 --
+Lesson 3
+--
 
+Functions
 
+They are used to perform the same taks multiple times.
+For example, if you want to mesure the area of a rectangle, you need to multiply the width by the height, as follows:
 
+let width1 = 10;
+let height1 = 10;
+let area1 = height1 * width1;
+console.log(area1); //prints 100
 
+Now, if you need to perform that task multiple times, say we need to mesure 3 rectangles, instead of writing the same thing 3 times, we can use a function.
 
+--
+Function declarations
+--
+
+Works like a variable, it binds a value to a variable name, like so:
+
+function greetWorld() {
+  console.log('Hello World');
+ }
+ 
+ A function is composed of:
+ 1. the function keyword;
+ 2. its name or identifier, followed by parentheses;
+ 3. the function body, or the block statements required to perform a specific task, enclosed by curly brackets {}.
+
+In JavaScript there's the hoisting feature, witch allows the code to call a function before it's defined, as so:
+
+greetWorld(); // Output: Hello World
+
+function(greetWorld) {
+  console.log('Hello World');
+ }
+ 
+ Although that's possible, it's not good practice to do so.
+
+--
+function getReminder() {
+  console.log('Water the plants');
+}
+getReminder(); //Output: Water the plants
+
+function greetInSpanish() {
+  console.log ('Buenas Tardes.')
+}
+greetInSpanish(); //Output: Buenas Tardes.
+
+--
+
+For the function, we can specify its parameters, they will act just like variables, but their content will be added when calling the function, between parentheses, like shown:
+
+function calculateArea(width, height) {
+  console.log(width * height);
+ }
+ calculateArea(5,2); //Output 10
+ 
+ In the example above, width and height act like variables that change their value based on the parameters.
+ The names width and height are just placeholders for the values that will be executed.
+ 
+ The numbers in the parentheses when calling the function are named arguments. They can be passed to the function as values or variables.
+ Here the order is extremely important, because the arguments will follow the exact order that the parameters are declared.
+ 
+ In the same way, we can use variables as arguments, as long as they are declared first:
+ 
+ const rectWidth = 10;
+ const rectHeight = 6;
+ 
+ calculateArea(rectWidth, rectHeight); // Output: 60
+ 
+ 
