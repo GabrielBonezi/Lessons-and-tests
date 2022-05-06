@@ -581,5 +581,89 @@ function calculateArea(width, height) {
  const rectHeight = 6;
  
  calculateArea(rectWidth, rectHeight); // Output: 60
+ --
+ name = '';
+function sayThanks(name) {
+  console.log (`Thank you for your purchase ${name}! We appreciate your business.`);
+}
+sayThanks('Cole'); // output: Thank you for your purchase Cole! We appreciate your business.
+-- 
+Default Parameters
+--
+Default parameters allow parameters to have predetermined values in case there's no argument into the function or if the argument called is undefined
+
+function greeting (name = 'stranger') {
+  console.log(`Hello ${name}!`;
+}
+greeting(); //Output: Hello stranger!
+greeting(Gabriel) // Output: Hello Gabriel!
+
+--
+Helper Functions
+--
+Helper functions are just functions that are called in other functions to simplify complex tasks.
+
+They can help to break down a big complex task in some small, simpler ones, as shown:
+
+Say we need to convert celsius to fahrenheit, we can declare a function to multiply by 1,8 and then call this function again to convert properly:
+
+function multiplyByNineFifths (number) {
+  return number * 1.8
+  }
+function converter (celsius){
+  return multiplyByNineFifths(celsius) + 32;
+  }
+ console.log (converter(0));  // output: 32
+ console.log (converter(1)); // Output: 33.8
+ --
+ another example
+ --
+ function monitorCount(rows, columns) {
+  return rows * columns;
+}
+function costOfMonitors (rows, columns){
+  return (monitorCount (rows, columns)) * 200
+}
+const totalCost = costOfMonitors(5,4);
+console.log (totalCost);
+--
+Function Expressions
+--
+To put it simply, it's a function declared inside the value of a variable, as shown:
+
+const area = function (width, lenght) {
+   a = width * lenght
+   return a;}
+console.log(area(5,4)); //Output: 20
+
+Its important to note that those functions do not have a name and therefore are nominated anonymous function.
+
+--
+Arrow functions
+--
+Just another way to write the functions, using the fat arrow =>
+
+the arrow substitutes the need of writing 'function' everytime, by just putting the parameters followed by the arrow and then the body of the function, as shown:
+
+const area = (width, lenght) => {
+  a = width * lenght;
+  return a;
+  }
+ --
+ Concise body arrow functions
+ --
+ A minimalist way to write the code.
+ 1. One parameter functions do not need parentheses;
+ 2. One line functions do not need curly braces;
+ 3. One line functions do not need return keyword, because the return is implicit;
  
- 
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+console.log(plantNeedsWater ('Sunday')); // output: false
+   
+With two or more parameters there needs to be parentheses.
+If the block has two or more lines, it needs to have curly braces.
+
+const plantNeedsWater = (day, night) => (day === 'Wednesday', night === 'abc') ? true : false;
+console.log (plantNeedsWater ('Wednesday', 'abc')); // output true
+
+
