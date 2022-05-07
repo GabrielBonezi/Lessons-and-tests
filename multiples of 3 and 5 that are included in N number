@@ -1,21 +1,23 @@
-//code not working, work in progress
 function solution(number){
-    let arr = [];
-    let x = number/5;
-    let y = number/3;
-    for (let i = 0; i<number; i++){
-      if (Number.isInteger(y)){
+  console.log(number);  
+  let arr = [];
+    for (let i =0; i<number; i++){
+        let x = i/5;
+        let y = i/3;
+        if (Number.isInteger(y) && y>0){
         arr.push(i);
       }else if 
-      (Number.isInteger(x)){
+      (Number.isInteger(x) && x>0){
           arr.push(i);
       }
+      
     }
-    let sum = 0
-    for (var i in arr){
-        sum += arr[i]
+       let sum = 0
+    for (let t=0; t<arr.length;t++){
+        sum += arr[t]
     }
-  console.log(arr);
+    
+    console.log(arr);
+  return sum;
 }
-
-  console.log(solution(15));
+solution(10); //output 23
