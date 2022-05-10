@@ -666,4 +666,74 @@ If the block has two or more lines, it needs to have curly braces.
 const plantNeedsWater = (day, night) => (day === 'Wednesday', night === 'abc') ? true : false;
 console.log (plantNeedsWater ('Wednesday', 'abc')); // output true
 
+-------------
+Lesson 4
+Arrays
+-------------
+
+Arrays are a way to organize and store information. Basicly they are used to list things.
+They can store data of any type and types mixes together. For example:
+- only numbers : [1, 2, 3, 4, 5];
+- only strings : ['Gabriel', 'GabrielB', 'GabrielBonezi'];
+- only booleans: [true, false, false, true];
+- all of them  : [true, 'Gabriel', 3];
+
+Each of the things listed on the array are called 'elements';
+
+Variables can also be assigned to an array value, as shown:
+
+let names = ['Gabriel', 'GabrielB', 'GabrielBonezi'];
+
+const hobbies = ['play basketball', 'codding', 'play videogames'];
+console.log(hobbies); //output: [ 'play basketball', 'codding', 'play videogames' ]
+
+
+Each element in the array has a position. That position is called its 'index'.
+In JavaScript the arrays are zero-indexed, wich means that the index of the first element is 0, rather than 1.
+
+To access the content of the array, we can call the array name and the index between brackets:
+
+console.log(names[0]) // output: 'Gabriel';
+
+Also, we can acess characters in a string using the same logic:
+
+const hello = 'Hello World'
+console.log(hello[6]) // output: W
+-------------
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+
+let listItem = famousSayings[0];
+console.log(listItem); // output: Fortune favors the brave.
+
+console.log(famousSayings[2]); // output: Where there is love there is life.
+
+console.log(famousSayings[3]); //output: undefined, because there's no 4th element in the array called.
+-------------------------
+
+Acessing the elements of the array, we can reasign their values, like we can do with the variables, for example:
+
+let seasons = ['Fall', 'Winter', 'Spring', 'Summer'];
+
+console.log(seasons); // Output: ['Fall', 'Winter', 'Spring', 'Summer']
+
+seasons[0] = 'Autumn'
+
+console.log (seasons); // Output: ['Autumn', 'Winter', 'Spring', 'Summer']
+
+---
+Even though the variables created with the const keyword can't be modified, the elements in the arrays that are created with const remain mutable.
+Meaning that we can change the content of a const array, but can't reassing a new array or a different value.
+
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+condiments[0] = 'Mayo';
+console.log(condiments); // output: Mayo, Mustard, Soy Sauce, Sriracha
+condiments = ['Mayo'];
+console.log(condiments); // output: Mayo
+utensils[3] = 'Spoon';
+console.log(utensils); // Fork, Knife, Chopsticks, Spoon
+---
+
+
 
